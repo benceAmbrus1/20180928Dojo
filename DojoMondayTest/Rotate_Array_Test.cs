@@ -22,5 +22,35 @@ namespace DojoMondayTest
             // Assert
             Assert.AreEqual(true, actual.SequenceEqual(expected), "The 2 array are not the same");
         }
+
+        [TestMethod]
+        public void RotateArrayTest_invalidToHighCounter()
+        {
+            // Arrange
+            int[] testArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int testCounter = 11;
+            int[] expected = new int[] { 7, 8, 9, 10, 1, 2, 3, 4, 5, 6 };
+
+            // Act
+            int[] actual = Rotate_Array.Rotate(testArray, testCounter);
+
+            // Assert
+            Assert.AreEqual(null, actual, "The arrey should equal null");
+        }
+
+        [TestMethod]
+        public void RotateArrayTest_CounterEqualArraLength()
+        {
+            // Arrange
+            int[] testArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int testCounter = 10;
+            int[] expected = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            // Act
+            int[] actual = Rotate_Array.Rotate(testArray, testCounter);
+
+            // Assert
+            Assert.AreEqual(true, actual.SequenceEqual(expected), "The 2 array are not the same");
+        }
     }
 }
