@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using _20180928DojoMonday;
 
 namespace DojoMondayTest
 {
@@ -7,23 +8,21 @@ namespace DojoMondayTest
     public class Rotate_Array_Test
     {
         [TestMethod]
-        public void TestMethod1() //rename method
+        public void RotateArrayTest_Valid() //rename method
         {
             // Arrange
 
-            //double beginningBalance = 11.99;
-            //double debitAmount = 4.55;
-            //double expected = 7.44;
-            ////BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+            int[] testArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int testCounter = 4;
+            int[] expected = new int[] {7, 8, 9, 10, 1, 2, 3, 4, 5, 6 };
 
             // Act
 
-            //account.Debit(debitAmount);
+            int[] actual = Rotate_Array.Rotate(testArray, testCounter);
 
             // Assert
 
-            //double actual = account.Balance;
-            //Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");
+            Assert.AreEqual(expected, actual, "The 2 array are not the same");
 
         }
     }

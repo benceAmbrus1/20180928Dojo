@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _20180928DojoMonday
 {
-    class Rotate_Array
+    public class Rotate_Array
     {
         public static int[] Rotate( int[] array, int counter)
         {
