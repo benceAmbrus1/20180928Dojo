@@ -12,16 +12,19 @@ namespace _20180928DojoMonday
         {
             if (counter <= array[array.Length - 1])
             {
-                List<int> inputArray = new List<int>();
+                int[] result = new int[array.Length];
+                List<int> inputArray = array.OfType<int>().ToList();
                 int i = 0;
                 while (i < counter)
                 {
-                    inputArray.Insert(0, inputArray[-1]);
-                    inputArray.Remove(inputArray[-1]);
+                    int[] arraySlice = new int[array.Length - counter];
+                    int[] arrayRotated = new int[counter];
+                    Array.Copy(array, 0, arraySlice, 0, array.Length - counter);
+                    Array.Copy(array, array.Length - counter, arrayRotated, 0, counter);
+                    result = arrayRotated.Concat(arraySlice).ToArray();
                     i++;
                 }
-                int[] outArray = inputArray.ToArray();
-                return outArray;
+                return result;
             }
             else
             {
