@@ -10,13 +10,23 @@ namespace _20180928DojoMonday
     {
         public static int[] Rotate( int[] array, int counter)
         {
-            while( counter > 0)
+            if (counter <= array[array.Length - 1])
             {
-
+                List<int> inputArray = new List<int>();
+                int i = 0;
+                while (i < counter)
+                {
+                    inputArray.Insert(0, inputArray[-1]);
+                    inputArray.Remove(inputArray[-1]);
+                    i++;
+                }
+                int[] outArray = inputArray.ToArray();
+                return outArray;
             }
-
-            return null;
+            else
+            {
+                return null;
+            }
         }
-
     }
 }
