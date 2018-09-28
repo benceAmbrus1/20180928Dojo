@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20180928DojoMonday", "20180928DojoMonday\20180928DojoMonday.csproj", "{3B978102-61F2-4D90-914E-DB3344BE4054}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DojoMondayTest", "DojoMondayTest\DojoMondayTest.csproj", "{D09592A4-111F-4497-92C9-8F1B35F1F0C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3B978102-61F2-4D90-914E-DB3344BE4054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B978102-61F2-4D90-914E-DB3344BE4054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B978102-61F2-4D90-914E-DB3344BE4054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09592A4-111F-4497-92C9-8F1B35F1F0C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09592A4-111F-4497-92C9-8F1B35F1F0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09592A4-111F-4497-92C9-8F1B35F1F0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09592A4-111F-4497-92C9-8F1B35F1F0C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
